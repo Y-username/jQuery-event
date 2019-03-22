@@ -1,6 +1,4 @@
 $(document).ready(function() {
- 
-
  	$("#stream1_btn").on("click", function() {
 		$(".stream1").fadeTo(2000, 0.5);
 		$(".stream1").fadeOut(1000);
@@ -18,6 +16,10 @@ $(document).ready(function() {
 		$(".stream3").removeClass('highlight_stream');
 	  	$(".stream3").addClass('highlight_stream');
 	});
-
-
 }); 
+
+$(document).ready(function(){
+	$(".button").on("click", function(){
+		$(".bottom_button").hide("fast");
+	})
+})
